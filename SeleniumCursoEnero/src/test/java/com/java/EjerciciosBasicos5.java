@@ -28,7 +28,7 @@ public class EjerciciosBasicos5 {
 			} 
 		}
 		
-		double div = var1%2;
+		double div = var1 % 2;
 		
 		if (div == 0){
 			System.out.println(" y par. " );
