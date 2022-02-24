@@ -28,8 +28,8 @@ public class DecimalComparison {
 				
 				pivX = x - intX;
 				pivY = y - intY;
-				x = (pivX * 10);
-				y = (pivY * 10);
+				x = (pivX * 10); // 1,24
+				y = (pivY * 10);// 1,23
 				intX = (int)x;
 				intY = (int)y;
 				count++;
@@ -47,5 +47,23 @@ public class DecimalComparison {
 		}
 		
 	}
+	
+	public static boolean areEqualByThreeDecimalPlaces2(double n1, double n2) {
+
+        n1 = n1*1000;
+        n2 = n2*1000;
+ 
+        n1 = (int) n1;
+        n2 = (int) n2;
+
+        return n1==n2 ? true : false;
+
+//        if(n1==n2) {
+//            return true;
+//        }else {
+//            return false;
+//        }
+
+    }
 	
 }

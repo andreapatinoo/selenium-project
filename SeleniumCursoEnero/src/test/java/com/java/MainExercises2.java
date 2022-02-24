@@ -13,6 +13,7 @@ public class MainExercises2 {
 		 * shouldWakeUp (true, -1); ? should return false  * */
 		Boolean awaken  = BarkingDog.shouldWakeUp(true, 8);
 		System.out.println("awake: " + awaken);
+		System.out.println(" ");
 
 		
 		
@@ -20,6 +21,7 @@ public class MainExercises2 {
 		// Highway 1, Normal 2 , School 3		
 		String msg = CarSpeed.speedLimit(110 , 3);
 		System.out.println(msg);
+		System.out.println(" ");
 		
 		
 		//Exercise 3
@@ -29,8 +31,9 @@ public class MainExercises2 {
 		 * areEqualByThreeDecimalPlaces(3.0, 3.0); ? should return true 
 		 * areEqualByThreeDecimalPlaces(-3.123, 3.123); ? should return false 
 		 */
-		boolean areEqual = DecimalComparison.areEqualByThreeDecimalPlaces(0.103, 0.1032);
+		boolean areEqual = DecimalComparison.areEqualByThreeDecimalPlaces2(3.170, 3.174);
 		System.out.println("Same numbers " + areEqual);
+		System.out.println(" ");
 	
 		
 		//Exercise 4
@@ -38,7 +41,7 @@ public class MainExercises2 {
 		//		* isCatPlaying (falso, 36); debe devolver falso 
 		//		* isCatPlaying (falso, 35); debería volver a verdadero 
 		boolean isPlaying = CatPlayer.isCatPlaying(false, 35);
-		System.out.println("Cat is playing " + isPlaying);
+		System.out.println("Cat is playing " + isPlaying); System.out.println(" ");
 		
 		
 		//Exercise 5
@@ -46,7 +49,7 @@ public class MainExercises2 {
 		 * printEqual (1, 1, 2); deben imprimir texto Ni todos son iguales o diferentes
 		 * printEqual (-1, -1, -1); debe imprimir el texto Valor no válido 
 		 * printEqual (1, 2, 3); debe imprimir texto Todos los números son diferentes	 */
-		NumbersVerifier.printNumberVerifier(1, 2, 1);
+		NumbersVerifier.printNumberVerifier(1, 2, 1); System.out.println(" ");
 		
 		// Exercise 6
 		/*sumOdd(1, 100); → should return 2500
@@ -56,7 +59,7 @@ public class MainExercises2 {
 		* sumOdd(100, -100); → should return -1
 		* sumOdd(100, 1000); → should return 247500
 		 * */
-		System.out.println("Odd Sum  is equals to " + SumOdd.sumOdd(100, 1000));
+		System.out.println("Odd Sum  is equals to " + SumOdd.sumOdd(100, 1000)); System.out.println(" ");
 		
 		
 		//Exercise 7
@@ -66,9 +69,16 @@ public class MainExercises2 {
 		* printMegaBytesAndKiloBytes(5000); ? should print the following text: "5000 KB = 4 MB and 904 KB"*/
 	
 		Megakilobytes kb = new Megakilobytes();
-		kb.printMegaBytesAndKiloBytes(5000);
+		kb.printMegaBytesAndKiloBytes(5000); System.out.println(" ");
 	
 	
+		//Exercise 8
+		/* 		 hasEqualSum(1, 1, 1);  deberia regresar FALSE porque la suma de 1+1 no es 1
+		 *       hasEqualSum(1, 1, 2);  deberia regresar TRUE porque la suma de 1+1 si es 2  */
+		System.out.println("The third is the sum: " + SumVerifier.hasEqualSum(1, 2, 2)); System.out.println(" ");
+		
+		
+		
 	}
 
 }
